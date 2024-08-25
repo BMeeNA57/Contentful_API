@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('https://preview.contentful.com/spaces/4q3xv9m8zuzc?access_token=VYlVhC775F4AWYbYJWff40y7_PNIKUc3IDtSnSoAft8') // Replace with your API endpoint
+    axios.get('https://preview.contentful.com/spaces/4q3xv9m8zuzc?access_token=apiToken') // Replace with your API endpoint
       .then(response => {
         setData(response.data);
       })
@@ -27,7 +27,7 @@ function App2() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('https://cdn.contentful.com/spaces/4q3xv9m8zuzc?access_token=VYlVhC775F4AWYbYJWff40y7_PNIKUc3IDtSnSoAft8') // Replace with your API endpoint
+    axios.get('https://cdn.contentful.com/spaces/4q3xv9m8zuzc?access_token=apiToken') // Replace with your API endpoint
       .then(response => {
         setData(response.data);
       })
